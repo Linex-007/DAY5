@@ -1,0 +1,21 @@
+<div>
+  <div class="row" style="padding: 10%;">
+      @for(item of products ; track item.id) {
+  <div class="col">
+     
+       <div class="p-4 g-col-6">
+          <div class="card" style="width: 18rem;">
+              <img src="{{item.image}}"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.description}}</p>
+                <a routerLink="{{item.id}}" class="btn btn-secondary">More</a>
+              </div>
+            </div>
+         </div>
+      </div>
+ 
+
+}
+</div>
+</div>
